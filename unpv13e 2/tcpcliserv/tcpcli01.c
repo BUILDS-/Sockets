@@ -9,17 +9,36 @@ sendtext(char* fp, int sockfd)
   printf("%s", fp);
   
   char sendline[MAXLINE], recvline[MAXLINE];
-  int s =0;
-  while(fp[s-1]!='\0')
-    {
-      Writen(sockfd, fp[s],1);
-      if(Readline(sockfd, recvline, MAXLINE) == 0)
+ 
+        printf("%s", sendline);
+
+/*while(Fgets(sendline, MAXLINE, fp) != NULL) 
+{
+printf("%s\n", "inside while");
+	Writen(sockfd, sendline, strlen(sendline));
+	printf("%s\n", "after writen");
+	if (Readline(sockfd, recvline, MAXLINE) == 0)
+	err_quit("str_cli: server terminated prematurely");
+
+	Fputs(recvline, stdout);
+}*/
+
+ 
+ // while(1)
+   // {
+      	int lengths = strlen(fp);
+//	printf("%d", lengths);
+	Writen(sockfd, fp, lengths);
+//	printf("%s\n", "under writen");
+      if(Readline(sockfd, recvline, lengths+1) == 0)
 	{
 	  err_quit("send: server terminated prematurely");
 	}
-      Fputs(recvline, stdout);
-      s++;
-    }
+	printf("%s", recvline);
+	//Fputs(recvline, stdout);
+//	if(fp[s]='\0') 
+//		break;
+    //}
 }
 int
 main(int argc, char **argv)
