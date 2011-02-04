@@ -50,6 +50,7 @@ main(int argc, char **argv)
 	}
 	scanf("%s", input);
 	printf("%s\n", input);
+	
 	//Very not rooboost. (Levin-ism)
 	char ip[20] = "\0";
 	char port[10] = "\0";
