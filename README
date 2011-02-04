@@ -5,3 +5,6 @@ Monica Gribouski, mgribs@bu.edu
 Danny Cooper, dannyc@bu.edu
 Liam Wang, lzw@bu.edu
 
+
+FOR ASSIGNMENT 2:
+Our working TCP echo client and server reside in /unpv13e\ 2/tcpliserv/ and are called tcpcli01 and tcpserv01.

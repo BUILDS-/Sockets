@@ -8,3 +8,15 @@ Todo:
 	Nothing currently.
 Comments/notes: 
 	it works!
+
+
+Thursday, Feb 3, 2010 5:30pm - Friday Feb 4, 2010 4am
+Attendees: Danny, Monica, Liam
+Questions:
+Decisions:
+	Implemented TCP echo client and server using book code and own techniques. The functional programs reside in unpv13e\ 2/tcpcliserv/ and are called tcpserv01 and tcpcli01.
+Todo:
+	Nothing.
+Comments/notes:
+	We should figure out how to not rely on the header files provided by the book. Having nested folders like this seems to be a bit of a holdup.
+
