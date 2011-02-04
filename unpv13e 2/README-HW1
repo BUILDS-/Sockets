@@ -1,0 +1,21 @@
+
+By Liam Wang <lzw@bu.edu>
+For cs591 as taught by Prof Appavoo
+
+2)
+Because I don't have root access to the csa2 servers (not legally) I can't
+use port 13 to attach my socket to. So I attached both the server and the
+client program to a random free port (9981) and ran it from there. It did
+work. 
+
+3)
+I didn't get an error number, rather I got a Connection Refused error.
+I may edit this later when I get my textbook back.
+
+4)
+The counter gave variable answers. The last time I checked, it
+printed "10". 
+
+5)
+I must be doing this wrong, but the result is that it prints out the time
+of day several times. 
