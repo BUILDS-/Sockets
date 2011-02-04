@@ -3,6 +3,9 @@
 int
 main(int argc, char **argv)
 {
+
+
+
 	int					listenfd, connfd;
 	pid_t				childpid;
 	socklen_t			clilen;
@@ -14,6 +17,8 @@ main(int argc, char **argv)
 	servaddr.sin_family      = AF_INET;
 	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	servaddr.sin_port        = htons(SERV_PORT);
+
+	printf("%d\n", SERV_PORT);	
 
 	Bind(listenfd, (SA *) &servaddr, sizeof(servaddr));
 
